@@ -1,4 +1,4 @@
-/* ====== GLOBAL STYLE ====== */
+/* GLOBAL STYLE */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ a {
   color: inherit;
 }
 
-/* ====== NAVBAR ====== */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ a {
   color: #7DA0C4;
 }
 
-/* ====== HERO ====== */
+/* HERO */
 .hero {
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ a {
   color: #C1E8FF;
 }
 
-/* ====== SECTION ====== */
+/* SECTION */
 .section {
   padding: 4rem 10%;
   background: rgba(2,16,36,0.6);
@@ -86,22 +86,12 @@ a {
   color: #C1E8FF;
 }
 
-/* ====== PROFILE ====== */
+/* PROFILE (HQ) */
 .hq-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
-}
-
-.hq-card {
-  background: linear-gradient(135deg, #5483B3, #7DA0C4);
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-  color: #021024;
-  font-weight: bold;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
 }
 
 .hq-card {
@@ -115,8 +105,11 @@ a {
 
 .hq-card img {
   width: 100%;
+  max-width: 200px;
   height: 120px;
   object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
 }
 
 .hq-card p {
@@ -125,8 +118,7 @@ a {
   background: rgba(0,0,0,0.5);
 }
 
-
-/* ====== PORTFOLIO ====== */
+/* PORTFOLIO */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -139,18 +131,27 @@ a {
   border-radius: 12px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 .card h4 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: #C1E8FF;
 }
 
-/* ====== FORM ====== */
+/* FORM */
 .form-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +196,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* ====== FOOTER ====== */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 1rem;
