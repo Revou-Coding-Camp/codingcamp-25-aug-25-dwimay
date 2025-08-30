@@ -1,4 +1,4 @@
-// ====== WELCOME TEXT ======
+//WELCOME TEXT  
 window.addEventListener("DOMContentLoaded", () => {
   let name = prompt("Masukkan Nama Anda:");
   if (name && name.trim() !== "") {
@@ -6,10 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ====== Tahun otomatis ======
+//Tahun otomatis
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// ====== Form handler ======
+//Form handler 
 document.getElementById("message-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value;
